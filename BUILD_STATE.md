@@ -13,7 +13,7 @@ Backend : Next.js integrated (API routes/SSR)
 ## Client State
 - [ ] Scaffold - framework initialized
 - [x] UI - components and layout
-- [ ] LOGIC - state management and API client
+- [x] LOGIC - state management and API client
 - [ ] FORMS - form architecture
 - [ ] ROUTING - route definitions
 - [ ] TESTING - test suite
@@ -42,4 +42,4 @@ Before starting any task, verify:
 | Date | Agent | Scope | Task | Status | Branch |
 |------|-------|-------|------|--------|--------|
 | 2026-09-03 | UI | client | scaffolds the full project structure | COMPLETED | agent/client/ui/1788418137826 |
-| 2026-09-03 | LOGIC | client | state management, API integration, custom hooks | IN PROGRESS | agent/client/logic/1788420033808 |
+| 2026-09-03 | LOGIC | client | state management, API integration, custom hooks | COMPLETED | agent/client/logic/1788420033808 |
