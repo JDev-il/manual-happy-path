@@ -1,12 +1,21 @@
 "use client";
 
+import { QueryClientProvider } from "@tanstack/react-query";
+import { getQueryClient } from "@/lib/query-client";
 import { StyledComponentsRegistry } from "@/lib/registry";
 
 /**
  * Client-side provider stack.
- * TODO(UI): the TanStack Query provider is intentionally absent — the LOGIC
- * agent owns the QueryClient and will nest it inside this component.
+ *
+ * The QueryClient is created by `@/lib/query-client` — fresh per request on the
+ * server, memoised per tab in the browser — so no cache is shared across users.
  */
 export function Providers({ children }: { children: React.ReactNode }) {
-  return <StyledComponentsRegistry>{children}</StyledComponentsRegistry>;
+  const queryClient = getQueryClient();
+
+  return (
+    <StyledComponentsRegistry>
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    </StyledComponentsRegistry>
+  );
 }
