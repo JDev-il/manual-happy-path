@@ -1,0 +1,7 @@
+worktrees/
+
+.scaffold/
+
+.workflow/
+
+node_modules/
