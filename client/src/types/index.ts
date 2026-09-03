@@ -153,3 +153,32 @@ export interface HeatmapCell {
   changePercent: number;
   weight: number;
 }
+/* ── Added by client/LOGIC — ratified in CONTRACTS.md ───────────────── */
+
+export type MoverDirection = "gainers" | "losers" | "active";
+
+export interface IndexStat {
+  id: string;
+  label: string;
+  value: number;
+  changePercent: number;
+  direction: TrendDirection;
+  precision: number;
+  unit: "point" | "percent";
+  sparkline: SparklinePoint[];
+  asOf: string;
+}
+
+export interface AssistantReply {
+  id: string;
+  prompt: string;
+  answer: string;
+  citations: string[];
+  answeredAt: string;
+}
+
+export interface ApiErrorBody {
+  code: string;
+  message: string;
+  details?: Record<string, unknown>;
+}
