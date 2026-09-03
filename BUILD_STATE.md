@@ -41,3 +41,4 @@ Before starting any task, verify:
 ## Agent Log
 | Date | Agent | Scope | Task | Status | Branch |
 |------|-------|-------|------|--------|--------|
+| 2026-09-03 | UI | client | scaffolds the full project structure | IN PROGRESS | agent/client/ui/1788418137826 |
