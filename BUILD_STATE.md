@@ -42,3 +42,4 @@ Before starting any task, verify:
 | Date | Agent | Scope | Task | Status | Branch |
 |------|-------|-------|------|--------|--------|
 | 2026-09-03 | UI | client | scaffolds the full project structure | COMPLETED | agent/client/ui/1788418137826 |
+| 2026-09-03 | LOGIC | client | state management, API integration, custom hooks | IN PROGRESS | agent/client/logic/1788420033808 |
